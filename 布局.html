@@ -1,78 +1,215 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
+
 <style type="text/css">
+	body{
+    	background-color: rgb(222,222,222);
+    }
+    #first{
+
+	}
+	#head1{
+		height: 60px;
+		background-color: rgb(51,51,51);
+
+	}
+	#head1 img{
+		height: 40px;
+	    margin: 10px 0px 5px 15px;
+	    float: left;
+
+	}
+
+	#head1 li{
+		float: right;
+		list-style-type: none;
+	   
+	}
+	#head1 a{
+		margin-left: 15px;
+		font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        color:rgb(242,242,242);
+        line-height: 60px;
+        display: block;
+	}
+	.artical1,
+	.artical2,
+	.artical3,
+	.picture,
+	.biaoge{
+		margin: 15px;
+		padding: 15px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
+		
+	}
+	.artical1>p:nth-child(3),
+	.artical2>p:nth-child(3),
+	.artical3>p:nth-child(3){
+		font-size: 14px;
+	    color: rgb(111, 111, 111);
+	}
+	.artical1 h2,
+	.artical2 h2,
+	.artical3 h2{
+		color: rgb(111, 111, 111);
+	}
+	.artical1>p:nth-of-type(2),
+	.artical2>p:nth-of-type(2){
+		text-indent: 2em;
+	    
+	}
+	.picture li{
+		margin-top: 10px;
+		padding: 10px;
+		border: 1px solid rgb(184,184,184);
+		list-style-type: none;
+	}
+	.picture p{
+		text-align: center;
+	}
 	#jiacu{
 		font-weight: bold;
 	}
-	#biaoge{
-		border: 1px;
-		;
+	.artical3 table{
+		width: 100%;
+		border: 1px solid  rgb(184,184,184);
+		border-collapse: collapse;
+		
+		
 	}
-	td{
-		border: 1px solid blue;
-		font-size: 20px;
+	
+	.artical3 td{
+		border: 1px solid rgb(184,184,184);
+		
+		padding: 5px;
+
 	}
+	#third{
+		background-color: rgb(161,163,156);
+
+	}
+	#first{
+	
+	background-color: rgb(51,51,51);
+    }
+    #first td{
+    	color: white;
+    }
+    .biaoge h2{
+    	border-left: 5px solid rgb(204,204,204);
+    	padding-left: 10px;
+    }
+    #buju2{
+    	margin:0 auto;
+    }
+   .biaoge  textarea {
+	width: 100%;
+	height: 100px;
+	vertical-align: top;
+   }
+   .biaoge p{
+   	  color: rgb(204,204,204);
+   }
+   .biaoge input[name="submit"]{
+	   	width: 100%;
+		margin-top: 5px;
+		padding: 5px;
+		color: rgb(255, 255, 255);
+		background-color: rgb(51, 85, 208);
+		border: none;
+		border-radius: 5px;
+   }/*button元素的改变*/
+   
+   .biaoge td:nth-of-type(1) {
+	width: 30%;
+	padding: 5px;
+	padding-right: 15px;
+	text-align: right;
+    }  /*让标签元素整体偏右*/
+
+
+  /* #buju{
+   	 border:1px solid black;
+   }
+   #buju td{
+   	border:1px solid black;
+   }*/
+
+    
+
 </style>
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>作业1</title>
 </head>
 <body>
-	<div>
-		<h1>网站一级标题</h1>
-		<ul>
-			<li><a href="a">导航链接一</a></li>
-			<li><a href="a">导航链接二</a></li>
-			<li><a href="a">导航链接三</a></li>
-			<li><a href="a">导航链接四</a></li>
-		</ul>
-		<h2>文章一级标题</h2>
-		</br>
-		<h3>文章二级标题</h3>
-		<span>文章作者</span>&nbsp;<span>文章发表时间</span>
-		<p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br> 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br>
-		 这是一个很长的段落，<span><a href="a">http://ife.baidu.com</a></span>这是一个<span id="jiacu">很长的段落</span></br>
-		 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落.</p>
-		 <img src="lala.jpg" alt="">
-		 <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br> 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br>
-		 这是一个很长的段落，<span><a href="a">http://ife.baidu.com</a></span>这是一个<span id="jiacu">很长的段落</span></br>
-		 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落.</p>
-	</div>
-	<div> 
-		 <h1>另一篇文章一级标题</h1>
-		 <h2>二级标题</h2>
-		 <span>文章作者</span>&nbsp;<span>文章发表时间</span>
-		 <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br> 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br>
-		 这是一个很长的段落，<span><a href="a">http://ife.baidu.com</a></span>这是一个<span id="jiacu">很长的段落</span></br>
-		 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落.</p>
-		 <ul>
-		 	<li>列表</li>
-		 	<li>列表</li>
-		 	<li>列表</li>
-		 	<li>列表</li>
-		 </ul>
-		 <h2>图片</h2>
-		 <div>
-		 	 <p>好看的图片</p>
-		 	 <img src="lala.jpg" alt="">
-		 	 <p>好看的图片</p>
-		 	 <img src="lala.jpg" alt="">
-		 	 <p>好看的图片</p>
-		 	 <img src="lala.jpg" alt="">
-		 	 <p>好看的图片</p>
-		 	 <img src="lala.jpg" alt="">
-		 	 <p>好看的图片</p>
-		 	 <img src="lala.jpg" alt="">
-		 	 <p>好看的图片</p>
-		 	 <img src="lala.jpg" alt="">
+	
+		<div id="head1">
+			<img src="baidu.png" alt="">
+			<ul>
+				<li><a href="a">导航链接一</a></li>
+				<li><a href="a">导航链接二</a></li>
+				<li><a href="a">导航链接三</a></li>
+				<li><a href="a">导航链接四</a></li>
+			</ul>
+		</div>
+		<div class="artical1">
+			<h1>文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<p>文章作者&nbsp;文章发表时间</p>
+			<p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</br>
+			 这是一个很长的段落，<span><a href="a">http://ife.baidu.com</a></span>这是一个<span id="jiacu">很长的段落</span>
+			 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落.</p>
+			 <img src="lala.jpg" alt="">
+			 <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+			 这是一个很长的段落，<span><a href="a">http://ife.baidu.com</a></span>这是一个<span id="jiacu">很长的段落</span>
+			 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落.</p>
+		</div>
+	
+		<div class="artical2">
+			 <h1>另一篇文章一级标题</h1>
+			 <h2>二级标题</h2>
+			<p>文章作者&nbsp;文章发表时间</p>
+			 <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， </br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+			 这是一个很长的段落，<span><a href="a">http://ife.baidu.com</a></span>这是一个<span id="jiacu">很长的段落</span>
+			 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落.</p>
+			 <ul>
+			 	<li>列表</li>
+			 	<li>列表</li>
+			 	<li>列表</li>
+			 	<li>列表</li>
+			 </ul>
+			 
+         </div>
+		 <div class="picture">
+		 	<h2>图片</h2>
+		 	<ul>
+		 		<li>
+		 		 <p>好看的图片</p>
+			 	 <img src="lala.jpg" alt="">
+			 	</li>
+			 	<li>
+			 	 <p>好看的图片</p>
+			 	 <img src="lala.jpg" alt="">
+			 	</li>
+			 	<li>
+			 	 <p>好看的图片</p>
+			 	 <img src="lala.jpg" alt="">
+			 	</li>
+			 	 
+		    </ul>
 		 </div>
-	</div>
-	<div> 
+
+	<div class="artical3"> 
+
 		 <h1>最后一篇文章一级标题</h1>
-		 <h3>文章二级标题</h3>
-		 <span>文章作者</span>&nbsp;<span>文章发表时间</span>
+		 <h2>文章二级标题</h2>
+		 <p>文章作者&nbsp;文章发表时间</p>
 		 <table id="biaoge">
-	    		<tr>
+	    		<tr id="first">
 		    		<td>表头</td>
 	    			<td>表头</td>
 	    			<td>表头</td>
@@ -98,54 +235,98 @@
 	    			<td>表格单元格内容</td>
 	    			<td><a href="http://giscafer.com">操作</td>
 	    		</tr>
-	    		<tr>
+	    		<tr id="third">
 	    			<td>&nbsp;</td>      /*表格中为空时不能直接不写，要加&nbsp;*/
 	    			<td colspan="2">3</td>//列合并
 	    			
 	    		</tr>
 	    	</table>
 	</div>
-	<div>
-		<h1>这里以后是一个侧栏</h1>
-		<h1>侧栏注册窗口标题</h1>
-		<form>
-			<label>输入邮箱地址：</label>
-			<input  type="地址"  value="" />
-			<p>邮箱地址请按要求格式输入</p>
-			<label>输入密码：</label>
-			<input  type="password"  value="" />
-			<label>重复输入：</label>
-			<input  type="password"  value="" />
-                        <p>密码为6到10位数字</p>
-
-		</form>
-		<form >
-		    <label>性别:</label>
-		    <label>男</label>
-		    <input type="radio" value="1"  name="gender" />
-		    <label>女</label>
-		    <input type="radio" value="2"  name="gender" />
-
-            <label>城市</label>
-        	 <select>
-			<option value="北京">北京</option>
-			<option value="上海">上海</option>
-			<option value="广州">广州</option>
-			<option value="深证">深证</option>  
-	         </select>
-
-   		<label>爱好:</label> 
-		     <label>运动</label>
-		     <input type="checkbox" value="sport"   />
-		     <label>艺术</label>
-		     <input type="checkbox" value="art"   />
-		     <label>科学</label>
-		     <input type="checkbox" value="science"   />
-
-		<label>个人描述</label>
-		    <textarea>在这里输入内容...</textarea>
-		    <input type="button" value="确认提交"  name="submit" />
-		    
+	<div class="biaoge">
+		<h2>这里以后是一个侧栏</h2>
+		
+		<form id="buju">
+			<table id="buju2">
+				<tr>
+					
+						<td><label>输入邮箱地址：</label></td>
+						<td><input  type="地址"  value="" /></td>  
+				    
+				</tr>
+				<tr>
+						<td>
+					    </td>
+						<td><p>邮箱地址请按要求格式输入</p></td>
+				</tr>
+				<tr>
+					<td><label>输入密码：</label></td>		
+					
+					<td><input  type="password"  value="" /></td>  
+				    
+				</tr>
+				<tr>
+					<td>
+					  <label>重复输入：</label>
+				    </td>
+				    <td>
+					  <input  type="password"  value="" />
+				    </td>  
+				</tr>
+				<tr>
+					<td>
+						
+					</td>
+					<td><p>密码为6到10位数字</p></td>
+				</tr>	
+		            
+	         
+				<tr>
+					<td>
+				        <label>性别:</label>
+				    </td>
+				    <td>
+				    	<label>男</label>
+					    <input type="radio" value="1"  name="gender" />
+					    <label>女</label>
+					    <input type="radio" value="2"  name="gender" />
+				    </td>
+				    
+			     </tr>
+			     <tr>
+			     	<td>
+		                <label>城市</label>
+		            </td>
+		            <td> 
+			            <select>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="广州">广州</option>
+						<option value="深证">深证</option>  
+				        </select>
+			        </td>
+		        	
+				</tr>
+				<tr>
+					<td><label>爱好:</label> </td>
+		   			<td><label>运动</label>
+					     <input type="checkbox" value="sport"   />
+					     <label>艺术</label>
+					     <input type="checkbox" value="art"   />
+					     <label>科学</label>
+					     <input type="checkbox" value="science"   />
+				    </td>
+				     
+		  		</tr>
+		  		<tr>
+					<td><label>个人描述</label></td>
+				    <td>
+					    <textarea>在这里输入内容...</textarea>
+					    
+				    </td>
+				    
+				</tr>
+			</table>
+			<input type="button" value="确认提交"  name="submit" />
         </form>
 
 	</div>
